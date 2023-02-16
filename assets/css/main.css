@@ -83,6 +83,12 @@
 .r-2\/1 {
     aspect-ratio: 2/1 !important;
 }
+.r-1\/1 {
+    aspect-ratio: 1/1 !important;
+}
+.r-2\/3 {
+    aspect-ratio: 2/3 ;
+}
 
 .glass {
     background: rgba(255, 255, 255, 0.5);
@@ -102,18 +108,21 @@
     height: 10rem;
 }
 
+@media (min-width: 1200px) {
+    .r-xl-1\/1 {
+        aspect-ratio: 1/1 !important;
+    }
+}
 
 @media (min-width: 768px) {
     .hero-bg {
         width: 100%;
         height: unset;
-    }
-    
+    }    
 }
 @media (min-width: 576px) {
     .hero-bg2 {
         width: 100%;
         height: unset;
     }
-    
 }

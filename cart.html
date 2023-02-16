@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lelang</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="position-fixed top-0 z-5 w-100">
+        <!-- Header -->
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container d-flex justify-content-between flex-row-reverse flex-md-row">
+              <a class="navbar-brand" href="#">Lelang</a>
+              <div class="d-flex gap-2 align-items-center flex-row-reverse flex-md-row">
+                <a href="" class="text-secondary">
+                    <i class="bi bi-archive-fill"></i>
+                </a>
+                <a href="" class="text-secondary">
+                    <i class="bi bi-heart-fill"></i>
+                </a>
+                <div class="dropdown">
+                    <button class="px-0 btn btn-none dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-coin"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <a href="" class="">
+                    <img src="/assets/img/profile-img.jpg" alt="" class="rounded-3 fs-6" style="height:
+                    2rem">
+                </a>
+              </div>
+            </div>
+        </nav>
+    
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Furniture</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home Care</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Aromatherapy</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-text" id="inputGroup-sizing-sm"><i class="bi bi-search"></i></span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Cari">
+                    </div>                  
+                </form>
+              </div>
+            </div>
+        </nav>
+    </nav>
+
+    <!-- Padding-top -->
+    <div class="spacing-navbar"></div>
+
+    <section>
+        <div class="container">
+            <div class="d-flex justify-content-between mb-2">
+                <h3 class="">Shopping Cart</h3>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sort
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <hr>
+            <div class="row gap-4 gap-md-0">
+                <div class="col-12 col-md-8">
+                  <div class="d-flex flex-column gap-3">
+                    <!-- Loop Card Cart -->
+                    <div class="card rounded-3 overflow-hidden shadow-sm">
+                      <div class="row g-2">
+                        <div class="col-4">
+                          <div class="r-2/3 h-100 overflow-hidden r-xl-1/1">
+                            <img src="/assets/img/card.jpg" class="h-100" alt="...">
+                          </div>
+                        </div>
+                        <div class="col-8">
+                          <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between">
+                              <div>
+                                <h5 class="card-title mb-0">Face Cream</h5>
+                                <p class="card-text"><small class="text-muted">Day Cream <span class="mx-2">|</span> 30 ml</small></p>
+                              </div>
+                              <div>
+                                <input class="form-control form-control-sm" type="number" placeholder="jumlah" aria-label="jumlah" value="1" style="width: 4rem;">
+                              </div>
+                            </div>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">$15</h5>
+                            <p class="card-text"><small class="text-muted"><i class="bi bi-check2 me-1"></i> in Stock</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card shadow-sm">
+                      <div class="card-body">
+                        <h5 class="card-title">Order Summary</h5>
+                        <ul class="list-group my-3">
+                          <li class="list-group-item d-flex justify-content-between">
+                            <p class="mb-0 text-secondary">Subtotal</p>
+                            <p class="mb-0 text-secondary">$0</p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between">
+                            <p class="mb-0 text-secondary">Shipping Estimate</p>
+                            <p class="mb-0 text-secondary">$0</p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between">
+                            <p class="mb-0 text-secondary">Tax Estimate</p>
+                            <p class="mb-0 text-secondary">$0</p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between">
+                            <h5 class="card-title mb-0">Order Total</h5>
+                            <h5 class="card-title mb-0">$0</h5>
+                          </li>
+                        </ul>
+                        <button type="submit" class="btn btn-dark w-100">Checkout</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container d-flex justify-content-between flex-column flex-lg-row py-2 ">
+            <p class="text-secondary text-center text-lg-start">
+                Copyright © 2022 Corporate UI Design System by Creative Tim.
+            </p>
+            <div class="d-flex gap-4 justify-content-around justify-content-lg-end">
+                <a href="" class="text-secondary text-decoration-none">Creative Tim</a>
+                <a href="" class="text-secondary text-decoration-none">About Us</a>
+                <a href="" class="text-secondary text-decoration-none">Blod</a>
+                <a href="" class="text-secondary text-decoration-none">License</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="/assets/vendor/js/bootstrap.bundle.js"></script>
+    <script src="/assets/vendor/js/jquery-3.6.3.js"></script>
+</body>
+</html>
